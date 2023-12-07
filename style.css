@@ -1,0 +1,155 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('./img/bg2.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100vh; 
+  font-family: Arial, sans-serif;
+  color: #ffffff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.translucido {
+  backdrop-filter: blur(20px);
+  color: #ffffff; 
+  padding: 20px;
+  height: 65vh;
+  width: 55vh;
+  border-radius: 15px;
+}
+.translucido::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: linear-gradient(135deg, #ffdd00 10%, transparent 30%, transparent 60%, #ffdd00 90%);
+  border-radius: 15px;
+  padding: 2px;
+  -webkit-mask: linear-gradient(to right, #fff, #fff) content-box, 
+        linear-gradient(to right, #fff, #fff);
+  
+  mask: linear-gradient(to right, #fff, #fff) content-box, 
+        linear-gradient(to right, #fff, #fff);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+#perfil{
+  width: 40%;
+  border-radius: 50px;
+  
+}
+#content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#pessoal-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.div-content{
+  height: 10vh;
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+/*Colocar só uma linha em baixo de cada div-content com o mesmo dourado das bordas*/
+
+h5{
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+img{
+  width: 100%;
+  height: 100%;
+  border-radius: 70px;
+}
+hr{
+  width: 100%;
+  border-radius: 5px; 
+  height: 0.2vh;
+    background-color: #ffdd00; 
+    border: none;
+    box-shadow: 0 0 5px #ffdd00, 0 0 10px #ffdd00, 0 0 20px #ffdd00;
+}
+a {
+  text-decoration: none; 
+  color: white; 
+}
+a:active {
+  color: white; 
+}
+#contacts{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.contact-content{
+  height: 5vh;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.hidder{
+  display: none;
+}
+#pesquisar{
+  width: 100%;
+  text-align: center;
+}
+#meuInput{
+  width: 50%;
+  height: 3.5vh;
+}
+button{
+  width: 6vw;
+  height: 4.5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  border-radius: 5px;
+}
+h1{
+  font-size: 4rem;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px; 
+}
+h2{
+  font-size: 1rem;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px; 
+}

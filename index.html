@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="pesquisar">
+      <h1>Enconte perfis no Github</h1>
+      <h2>
+        Pratica de consumo de api que gera cards com informações sobre o perfil
+        pesquisado..
+      </h2>
+      <div class="div-input">
+        <input type="text" id="meuInput" placeholder="Digite o username.." />
+        <button onclick="obterDadosDaApi()">Pesquisar</button>
+      </div>
+    </div>
+    <div id="card" class="translucido hidder">
+      <div id="header">
+        <section id="perfil"></section>
+        <section id="content"></section>
+        <section id="location"></section>
+      </div>
+      <section id="pessoal-content">
+        <div id="followers" class="div-content">
+          <span>Seguidores</span>
+        </div>
+        <div id="following" class="div-content"><span>Seguindo</span></div>
+        <div id="public_repos" class="div-content">
+          <span>Repositorios</span>
+        </div>
+      </section>
+      <section id="contacts">
+        <div class="contact-content">
+          <a id="email" href="" target="_blank" rel="noopener noreferrer"
+            ><ion-icon name="mail"></ion-icon
+          ></a>
+        </div>
+        <div class="contact-content">
+          <a id="twitter" href="" target="_blank" rel="noopener noreferrer"
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></a>
+        </div>
+        <div class="contact-content">
+          <a id="site" href="" target="_blank" rel="noopener noreferrer"
+            ><ion-icon name="globe"></ion-icon
+          ></a>
+        </div>
+        <div class="contact-content">
+          <a id="git" href="" target="_blank" rel="noopener noreferrer"
+            ><ion-icon name="logo-github"></ion-icon
+          ></a>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
